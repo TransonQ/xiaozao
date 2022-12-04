@@ -1,11 +1,16 @@
-import './App.css';
+import './App.css'
 
 function App() {
   return (
-    <div >
-      这是 app
+    <div>
+      <h1>这是 App</h1>
+      <HelloButton />
     </div>
-  );
+  )
 }
 
-export default App;
+function HelloButton() {
+  return <button>hello</button>
+}
+
+export default App
