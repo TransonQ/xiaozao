@@ -1,23 +1,17 @@
 import './App.css'
 
+const names = ['张无忌', '周芷若', '杨不悔', '小昭', '赵敏']
 function App() {
-  const hasLearned = true
+  const list = names.map((name, i) => (
+    <li
+      key={i}
+      style={{ color: i === names.length - 1 ? 'red' : '' }}
+    >
+      {name}
+    </li>
+  ))
 
-  // if (hasLearned) {
-  //   return <h1>张无忌学会了乾坤大挪移一人爆锤六大门派</h1>
-  // } else {
-  //   return <h1>张无忌偶遇山猴获九阳神功逼出寒毒</h1>
-  // }
-
-  let JSXMarkup = null
-
-  if (hasLearned) {
-    JSXMarkup = <h1>张无忌学会了乾坤大挪移一人爆锤六大门派</h1>
-  } else {
-    JSXMarkup = <h1>张无忌偶遇山猴获九阳神功逼出寒毒</h1>
-  }
-
-  return <>{JSXMarkup}</>
+  return <ul>{list}</ul>
 }
 
 export default App
