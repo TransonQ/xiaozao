@@ -1,17 +1,26 @@
 import './App.css'
 
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90,
+}
+
 function App() {
   return (
     <>
-      <h1>这是 App</h1>
-      <span className='subTitle'>添加样式的效果</span>
-      <HelloButton />
+      <h1>{user.name}</h1>
+      <img
+        className='avatar'
+        src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize,
+        }}
+      />
     </>
   )
-}
-
-function HelloButton() {
-  return <button>hello</button>
 }
 
 export default App
