@@ -1,0 +1,4 @@
+.contain {
+  display: grid;
+  place-items: center;
+}

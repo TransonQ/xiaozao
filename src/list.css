@@ -1,0 +1,18 @@
+.list {
+  width: 220px;
+  border: 1px solid burlywood;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+}
+.list li {
+  padding: 0 4px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li .delete:hover {
+  color: red;
+  cursor: pointer;
+}
