@@ -4,7 +4,9 @@ import { Card } from './Card'
 function App() {
   return (
     <>
-      <Card>123</Card>
+      <Card>
+        <span>123</span>
+      </Card>
     </>
   )
 }
