@@ -1,19 +1,11 @@
-import { useState } from 'react'
 import './App.css'
+import { Profile } from './Profile'
 
 function App() {
-  const [count, setCount] = useState(1)
-
   return (
-    <div>
-      <button
-        onClick={() => {
-          setCount(count + 1)
-        }}
-      >
-        {`当前值${count > 10 ? '大于 10' : '在 1 - 10 以内'}: ${count}`}
-      </button>
-    </div>
+    <>
+      <Profile name="法外狂徒张三" />
+    </>
   )
 }
 
