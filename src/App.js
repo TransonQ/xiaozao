@@ -1,10 +1,10 @@
 import './App.css'
-import { Profile } from './Profile'
+import { Card } from './Card'
 
 function App() {
   return (
     <>
-      <Profile name="法外狂徒张三" />
+      <Card>123</Card>
     </>
   )
 }
