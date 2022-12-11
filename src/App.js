@@ -1,12 +1,12 @@
 import './App.css'
-import { Card } from './Card'
 
 function App() {
   return (
     <>
-      <Card>
-        <span>123</span>
-      </Card>
+      <h3>todo list</h3>
+      <div>
+        todo: <input /> <button>新增</button>
+      </div>
     </>
   )
 }
